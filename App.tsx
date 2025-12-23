@@ -22,25 +22,25 @@ const ServicesPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 py-20">
+      <section className="relative bg-linear-to-br from-blue-600 to-blue-800 py-28">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+            <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-10 leading-tight">
               Complete Handyman Services
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+            <p className="text-3xl md:text-4xl text-blue-100 max-w-4xl mx-auto mb-12 font-semibold">
               From quick fixes to all-day projects, I handle the repairs and improvements that keep your home running smoothly.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-white text-sm font-medium">
-              <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                <CheckCircle className="h-5 w-5 text-green-400" /> Licensed & Insured
+            <div className="flex flex-wrap justify-center gap-6 text-white text-2xl md:text-3xl font-semibold">
+              <span className="flex items-center gap-4 bg-white/10 px-6 py-4 rounded-full">
+                <CheckCircle className="h-7 w-7 text-green-400" /> Licensed & Insured
               </span>
-              <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                <Clock className="h-5 w-5 text-amber-400" /> Same-Week Availability
+              <span className="flex items-center gap-4 bg-white/10 px-6 py-4 rounded-full">
+                <Clock className="h-7 w-7 text-amber-400" /> Same-Week Availability
               </span>
-              <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                <DollarSign className="h-5 w-5 text-green-400" /> Free Estimates
+              <span className="flex items-center gap-4 bg-white/10 px-6 py-4 rounded-full">
+                <DollarSign className="h-7 w-7 text-green-400" /> Free Estimates
               </span>
             </div>
           </div>
@@ -72,10 +72,10 @@ const ServicesPage = () => {
                     onClick={() => toggleService(service.id)}
                     className="w-full p-6 flex items-start gap-6 text-left hover:bg-slate-50 transition-colors"
                   >
-                    <div className="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center shrink-0">
                       <Icon className="h-8 w-8 text-blue-600" />
                     </div>
-                    <div className="flex-grow">
+                    <div className="grow">
                       <div className="flex items-start justify-between">
                         <div>
                           <h3 className="text-xl font-bold text-slate-900 mb-2">{service.title}</h3>

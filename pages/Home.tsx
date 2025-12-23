@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
   return (
     <>
       {/* Hero Section - Full viewport height */}
-      <section className="relative bg-slate-900 overflow-hidden h-screen min-h-[600px]">
+      <section className="relative bg-slate-900 overflow-hidden h-screen min-h-[720px]">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover object-[70%_65%]"
@@ -22,33 +22,33 @@ export const Home: React.FC = () => {
             alt="Paul Ries and his dog on a deck in San Clemente"
           />
           {/* Gradient overlay to ensure text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-slate-900/50 to-transparent" />
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="md:w-2/3 lg:w-1/2 py-12">
-            <div className="inline-flex items-center rounded-full bg-blue-600/30 px-3 py-1 text-sm font-semibold text-blue-100 border border-blue-400/30 mb-6 backdrop-blur-sm">
+          <div className="md:w-2/3 lg:w-1/2 py-20">
+            <div className="inline-flex items-center rounded-full bg-blue-600/30 px-5 py-3 text-2xl md:text-3xl font-semibold text-blue-100 border border-blue-400/30 mb-10 backdrop-blur-sm">
               <span>Serving San Clemente & South OC</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 drop-shadow-md">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white mb-10 drop-shadow-md leading-tight">
               Home Repairs Done <span className="text-amber-400">Right</span>.
             </h1>
-            <p className="mt-4 text-xl text-slate-100 max-w-2xl mb-8 leading-relaxed drop-shadow-sm font-medium">
+            <p className="mt-4 text-3xl text-slate-100 max-w-3xl mb-12 leading-relaxed drop-shadow-sm font-semibold">
               I’m Paul. I fix the things big contractors ignore. Reliable, friendly, and local to San Clemente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="secondary" className="text-lg px-8 shadow-lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth'})}>
+              <Button variant="secondary" className="text-2xl px-12 py-5 shadow-lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth'})}>
                 Get a Free Quote
               </Button>
-              <Button variant="outline" className="text-lg px-8 border-white text-white hover:bg-white hover:text-slate-900 bg-white/10 backdrop-blur-sm">
+              <Button variant="outline" className="text-2xl px-12 py-5 border-white text-white hover:bg-white hover:text-slate-900 bg-white/10 backdrop-blur-sm">
                 View Services
               </Button>
             </div>
             
-            <div className="mt-10 flex flex-wrap gap-6 text-white text-sm font-bold shadow-black drop-shadow-md">
-              <span className="flex items-center gap-2"><CheckCircle className="text-green-400 h-5 w-5" /> Licensed & Insured</span>
-              <span className="flex items-center gap-2"><CheckCircle className="text-green-400 h-5 w-5" /> 100% Satisfaction</span>
-              <span className="flex items-center gap-2"><CheckCircle className="text-green-400 h-5 w-5" /> Local Resident</span>
+            <div className="mt-12 flex flex-wrap gap-6 text-white text-2xl md:text-3xl font-bold shadow-black drop-shadow-md">
+              <span className="flex items-center gap-3"><CheckCircle className="text-green-400 h-6 w-6" /> Licensed & Insured</span>
+              <span className="flex items-center gap-3"><CheckCircle className="text-green-400 h-6 w-6" /> 100% Satisfaction</span>
+              <span className="flex items-center gap-3"><CheckCircle className="text-green-400 h-6 w-6" /> Local Resident</span>
             </div>
           </div>
         </div>
@@ -150,21 +150,21 @@ export const Home: React.FC = () => {
 
           {/* Happy Clients Photos */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-slate-800">
+            <div className="group relative aspect-4/3 rounded-xl overflow-hidden shadow-lg border-4 border-slate-800">
                 <img src="/assets/images/Paul and Homeowners.png" alt="Paul with happy homeowners" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-4">
                   <p className="text-white font-medium text-center">San Clemente Homeowners</p>
                 </div>
             </div>
-             <div className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-slate-800">
+             <div className="group relative aspect-4/3 rounded-xl overflow-hidden shadow-lg border-4 border-slate-800">
                 <img src="/assets/images/Paul_with_happy_clients.png" alt="Best Handyman Ever Sign" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-4">
                   <p className="text-white font-medium text-center">5-Star Reviews</p>
                 </div>
             </div>
-             <div className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-slate-800">
+             <div className="group relative aspect-4/3 rounded-xl overflow-hidden shadow-lg border-4 border-slate-800">
                 <img src="/assets/images/Paul with homeowners.png" alt="Custom Birdhouse Project" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-4">
                   <p className="text-white font-medium text-center">Custom Projects</p>
                 </div>
             </div>

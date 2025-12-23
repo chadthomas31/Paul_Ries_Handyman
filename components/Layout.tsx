@@ -25,11 +25,15 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen font-sans text-slate-900 bg-slate-50">
       {/* Top Utility Bar */}
-      <div className="bg-slate-900 text-slate-300 text-xs py-2 px-4">
+      <div className="bg-slate-900 text-slate-300 text-lg md:text-xl py-4 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <span className="hidden sm:flex items-center gap-1"><MapPin className="w-3 h-3" /> {SERVICE_AREA}</span>
-            <span className="flex items-center gap-1 text-amber-400 font-bold"><Phone className="w-3 h-3" /> {PHONE_NUMBER}</span>
+            <span className="hidden sm:flex items-center gap-2 font-semibold">
+              <MapPin className="w-5 h-5" /> {SERVICE_AREA}
+            </span>
+            <span className="flex items-center gap-2 text-amber-400 font-bold">
+              <Phone className="w-5 h-5" /> {PHONE_NUMBER}
+            </span>
           </div>
           <div className="hidden sm:block">
             Licensed & Insured
@@ -40,24 +44,24 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Main Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-48">
+          <div className="flex justify-between items-center h-64">
             {/* Logo */}
             <NavLink to="/" className="flex items-center gap-3 group" onClick={closeMenu}>
               <img 
                 src="/assets/Logo/transparent.png" 
                 alt="Fix It San Clemente" 
-                className="h-32 md:h-44 w-auto object-contain"
+                className="h-48 md:h-72 w-auto object-contain"
               />
             </NavLink>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex space-x-8 items-center">
+            <nav className="hidden md:flex space-x-10 items-center">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.path}
                   to={link.path}
                   className={({ isActive }) =>
-                    `text-sm font-medium transition-colors duration-200 ${
+                    `text-xl font-semibold transition-colors duration-200 ${
                       isActive ? 'text-blue-600' : 'text-slate-600 hover:text-slate-900'
                     }`
                   }
@@ -111,7 +115,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       </header>
 
       {/* Page Content */}
-      <main className="flex-grow">
+      <main className="grow">
         {children}
       </main>
 
