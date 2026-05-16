@@ -143,6 +143,13 @@ export const Footer: React.FC = () => {
         <div className="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm">
             © {currentYear} {BUSINESS_INFO.name}. All rights reserved.
+            <span className="block mt-1 text-slate-500 text-xs">
+              Site by{" "}
+              <a href="https://stackconsultingai.com" target="_blank" rel="noopener" className="hover:text-white underline-offset-2 hover:underline">Stack Consulting AI</a>
+              {" · "}
+              AI &amp; automation by{" "}
+              <a href="https://strategicsync.com" target="_blank" rel="noopener" className="hover:text-white underline-offset-2 hover:underline">Strategic Sync</a>.
+            </span>
           </p>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <Link
