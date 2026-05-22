@@ -21,7 +21,7 @@ You now have a **production-ready Next.js 14+ website** with:
 
 ```bash
 # Navigate to the Next.js files
-cd /home/user/Paul_Rise_Handyman
+cd /home/user/Paul_Ries_Handyman
 
 # Copy the Next.js package.json
 cp next-package.json package.json
